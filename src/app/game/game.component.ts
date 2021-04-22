@@ -18,6 +18,7 @@ export class GameComponent implements OnInit {
   position: number = 0;
   reset(): any {
     this.position = 0;
+    this.sentence = "Vous pouvez lancer les dés"
   }
   randomNumber(event: any) {
     (event.target as HTMLButtonElement).disabled = true;
@@ -26,8 +27,7 @@ export class GameComponent implements OnInit {
     const addValue = () => {
       if (this.position === this.maxSize) {
         clearInterval(move);
-        (event.target as HTMLButtonElement).disabled = false;
-        this.sentence = "Vous pouvez lancer les dés"
+        this.sentence = "Vous êtes arrivé à la fin !"
         return;
       }
       this.position += 1;
