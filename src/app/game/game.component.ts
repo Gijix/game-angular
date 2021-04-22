@@ -12,9 +12,11 @@ export class GameComponent implements OnInit {
       this.randomNums.push(i);
     }
   }
+  str : string = "test"
   sentence : string = "Vous pouvez lancer les dés"
   maxSize: number = 20;
   value: number = 0;
+  finalPosition : number = 0
   position: number = 0;
   reset(): any {
     this.position = 0;
@@ -34,6 +36,7 @@ export class GameComponent implements OnInit {
       if (previous + this.value === this.position) {
         clearInterval(move);
         (event.target as HTMLButtonElement).disabled = false;
+        this.finalPosition = this.position
         this.sentence = "Vous pouvez lancer les dés"
       }
     };
@@ -41,7 +44,6 @@ export class GameComponent implements OnInit {
     let move: ReturnType<typeof setTimeout> = setInterval(addValue, 200);
     if (this.position > this.maxSize) {
       this.position = this.maxSize;
-      
     }
   }
   randomNums: number[] = [];
