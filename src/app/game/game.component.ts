@@ -1,4 +1,4 @@
-import { Component, OnInit, SimpleChange } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-game',
@@ -19,16 +19,10 @@ export class GameComponent implements OnInit {
   reset(): any {
     this.position = 0;
   }
-  onShow(event: any) {
-    alert(event.target.innerHTML); // returns Show
-  }
-  onKey(event: any) {
-    this.maxSize = event.target.value;
-  }
   randomNumber(event: any) {
     (event.target as HTMLButtonElement).disabled = true;
     const previous = this.position;
-    this.sentence = "Votre pion est cours de mouvement"
+    this.sentence = "Votre pion est en cours de mouvement"
     const addValue = () => {
       if (this.position === this.maxSize) {
         clearInterval(move);
@@ -36,11 +30,11 @@ export class GameComponent implements OnInit {
         this.sentence = "Vous pouvez lancer les dés"
         return;
       }
-
       this.position += 1;
       if (previous + this.value === this.position) {
         clearInterval(move);
         (event.target as HTMLButtonElement).disabled = false;
+        this.sentence = "Vous pouvez lancer les dés"
       }
     };
     this.value = Math.floor(Math.random() * 5) + 1;
