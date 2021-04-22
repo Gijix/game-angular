@@ -2,7 +2,7 @@
     {
         "num":1,
         "img":"../assets/Sun.jpeg",
-        "question":"",
+        "question":"blablaquestion 1",
         "answer1":"",
         "answer2":"",
         "answer3":"",
@@ -13,7 +13,7 @@
    {
         "num":2,
         "img":"../assets/blackHole.jpg",
-        "question":"",
+        "question":"blablaquestion 2",
         "answer1":"",
         "answer2":"",
         "answer3":"",
@@ -24,7 +24,7 @@
     {
         "num":3,
         "img":"../assets/jupiter.jpg",
-        "question":"",
+        "question":"blablaquestion 3",
         "answer1":"",
         "answer2":"",
         "answer3":"",
@@ -35,7 +35,7 @@
     {
         "num":4,
         "img":"../assets/Mars.jpg",
-        "question":"",
+        "question":"blablaquestion 4",
         "answer1":"",
         "answer2":"",
         "answer3":"",
@@ -46,7 +46,7 @@
     {
         "num":5,
         "img":"../assets/Mercure.jpeg",
-        "question":"",
+        "question":"blablaquestion 5",
         "answer1":"",
         "answer2":"",
         "answer3":"",
@@ -57,7 +57,7 @@
    {
         "num":6,
         "img":"../assets/Fontaine.jpg",
-        "question":"",
+        "question":"blablaquestion 6",
         "answer1":"",
         "answer2":"",
         "answer3":"",
@@ -68,7 +68,7 @@
     {
         "num":7,
         "img":"../assets/blackHole.jpg",
-        "question":"",
+        "question":"blablaquestion 7",
         "answer1":"",
         "answer2":"",
         "answer3":"",

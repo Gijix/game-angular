@@ -2,11 +2,11 @@
 <div class="tab">
    <div class="grid" [ngClass]="{'gridActive':position === i}" *ngFor="let rndNum of randomNums;index as i" id="{{i}}">{{rndNum}}</div>
 </div>
-<button  (click)="randomNumber($event)">Lancer le dé</button>
+<button  (click)="randomNumber($event, $play)">Lancer le dé</button>
 <button  (click)="reset()">revenir à la position 0</button>
 <div>{{sentence}}</div>
 <p> résultat du dé :{{value}} <br>
 postion acutelle : {{position}}</p>
-<app-quizz [position]="finalPosition"></app-quizz>
+<app-quizz [position]="finalPosition" [verifyanswer]= "verifyanswer" ></app-quizz>
 </div>
 <router-outlet></router-outlet>

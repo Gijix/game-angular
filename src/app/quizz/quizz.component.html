@@ -1,8 +1,8 @@
 <div class='quizz'>
     <p>Quizz {{position}}</p>
     <p>{{question}}</p>
-    <input type="button" value={{answer1}} (click)="onClickMe()">
-    <input type="button" value={{answer2}}>
-    <input type="button" value={{answer3}}>
-    <input type="button" value={{answer4}}>
+    <input type="button" value={{answer1}} (click)="verifyanswer($event,goodAnswer)">
+    <input type="button" value={{answer2}} (click)="verifyanswer($event,goodAnswer)">
+    <input type="button" value={{answer3}} (click)="verifyanswer($event,goodAnswer)">
+    <input type="button" value={{answer4}} (click)="verifyanswer($event,goodAnswer)">
 </div>

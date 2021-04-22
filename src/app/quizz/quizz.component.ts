@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
+
+import poulet from '../game/game.json'
 
 @Component({
   selector: 'app-quizz',
@@ -7,13 +9,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class QuizzComponent implements OnInit {
   @Input() position: any
-
-  onClickMe() {
-    this.clickMessage = 'You are my hero!';
-  }
-  
+  @Input() verifyanswer: any
+  @Output() play=kfc
   constructor() {
   }
+ kfc= this.playable
 
   ngOnInit(): void {
   }
@@ -23,6 +23,7 @@ export class QuizzComponent implements OnInit {
   answer2: number = 8
   answer3: number = 10
   answer4: number = 12
+  goodAnswer: number = 9
 }
 
 
