@@ -1,5 +1,6 @@
 import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 
+// import {Status} from '../quizz.component.'
 import poulet from './game.json'
 
 @Component({
@@ -26,6 +27,8 @@ export class GameComponent implements OnChanges,OnInit {
   finalPosition : number = 0
   position: number = 0;
   playable : boolean = true
+
+
   reset(): any {
     console.log('test')
     this.playable = true
@@ -60,15 +63,15 @@ export class GameComponent implements OnChanges,OnInit {
     }
   }
   }
-  verifyanswer(event : any,arg : any): void{
-    console.log(arg, parseInt((event.target as HTMLButtonElement).value))
-    if(parseInt((event.target as HTMLButtonElement).value) === arg){
-      this.playable = true
-      console.log(this.playable)
-  } else{
-    this.position -2
-    this.playable = false
-    console.log('poulet2',this.playable)
-  }
-}
+  // verifyanswer(event : any,arg : any, eventsArgs: Status): void{
+  //   console.log(arg, parseInt((event.target as HTMLButtonElement).value))
+  //   if(parseInt((event.target as HTMLButtonElement).value) === arg){
+  //     this.playable = eventsArgs
+  //     console.log(this.playable)
+  // } else{
+  //   this.position -2
+  //   this.playable = false
+  //   console.log('poulet2',this.playable)
+  // }
+// }
 }

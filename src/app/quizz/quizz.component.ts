@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 import poulet from '../game/game.json'
 
@@ -10,11 +10,19 @@ import poulet from '../game/game.json'
 export class QuizzComponent implements OnInit {
   @Input() position: any
   @Input() verifyanswer: any
-  @Output() play=kfc
+  @Output() change= new EventEmitter();
   constructor() {
   }
- kfc= this.playable
 
+  verifyanswer2(event : any,arg : any): void{
+    console.log(arg, parseInt((event.target as HTMLButtonElement).value))
+    if(parseInt((event.target as HTMLButtonElement).value) === arg){
+      this.change.emit({play: true});
+  } else{
+    this.position -2
+    this.change.emit({play: false});
+  }
+}
   ngOnInit(): void {
   }
   clickMessage :string = ""
