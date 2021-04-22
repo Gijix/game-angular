@@ -1,6 +1,6 @@
-{
-    "case1":{
-        "num":"0",
+[
+    {
+        "num":1,
         "img":"../assets/Sun.jpeg",
         "question":"",
         "answer1":"",
@@ -10,8 +10,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case2":{
-        "num":"0",
+   {
+        "num":2,
         "img":"../assets/blackHole.jpg",
         "question":"",
         "answer1":"",
@@ -21,8 +21,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case3":{
-        "num":"0",
+    {
+        "num":3,
         "img":"../assets/jupiter.jpg",
         "question":"",
         "answer1":"",
@@ -32,8 +32,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case4":{
-        "num":"0",
+    {
+        "num":4,
         "img":"../assets/Mars.jpg",
         "question":"",
         "answer1":"",
@@ -43,8 +43,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case5":{
-        "num":"0",
+    {
+        "num":5,
         "img":"../assets/Mercure.jpeg",
         "question":"",
         "answer1":"",
@@ -54,8 +54,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case6":{
-        "num":"0",
+   {
+        "num":6,
         "img":"../assets/Fontaine.jpg",
         "question":"",
         "answer1":"",
@@ -65,8 +65,8 @@
         "goodAns":"",
         "behavior":10
     },
-    "case7":{
-        "num":"0",
+    {
+        "num":7,
         "img":"../assets/blackHole.jpg",
         "question":"",
         "answer1":"",
@@ -76,8 +76,8 @@
         "goodAns":"",
         "behavior":-5
     },
-    "case8":{
-        "num":"0",
+    {
+        "num":8,
         "img":"",
         "question":"",
         "answer1":"",
@@ -87,8 +87,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case9":{
-        "num":"0",
+    {
+        "num":9,
         "img":"../assets/neptune.jpg",
         "question":"",
         "answer1":"",
@@ -98,8 +98,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case10":{
-        "num":"0",
+    {
+        "num":10,
         "img":"../assets/saturn.jpg",
         "question":"",
         "answer1":"",
@@ -109,8 +109,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case11":{
-        "num":"0",
+    {
+        "num":11,
         "img":"../assets/blackHole.jpg",
         "question":"",
         "answer1":"",
@@ -120,8 +120,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case12":{
-        "num":"0",
+    {
+        "num":12,
         "img":"../assets/uranus.jpg",
         "question":"",
         "answer1":"",
@@ -131,8 +131,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case13":{
-        "num":"0",
+    {
+        "num":13,
         "img":"../assets/Venus.jpg",
         "question":"",
         "answer1":"",
@@ -142,8 +142,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case14":{
-        "num":"0",
+    {
+        "num":14,
         "img":"../assets/saturn.jpg",
         "question":"",
         "answer1":"",
@@ -153,8 +153,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case15":{
-        "num":"0",
+    {
+        "num":15,
         "img":"../assets/Mercure.jpeg",
         "question":"",
         "answer1":"",
@@ -164,8 +164,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case16":{
-        "num":"0",
+    {
+        "num":16,
         "img":"../assets/Fontaine.jpg",
         "question":"",
         "answer1":"",
@@ -175,8 +175,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case17":{
-        "num":"0",
+    {
+        "num":17,
         "img":"../assets/blackHole.jpg",
         "question":"",
         "answer1":"",
@@ -186,8 +186,8 @@
         "goodAns":"",
         "behavior":-6
     },
-    "case18":{
-        "num":"0",
+    {
+        "num":18,
         "img":"../assets/jupiter.jpg",
         "question":"",
         "answer1":"",
@@ -197,8 +197,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case19":{
-        "num":"0",
+    {
+        "num":19,
         "img":"../assets/Mercure.jpeg",
         "question":"",
         "answer1":"",
@@ -208,8 +208,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case20":{
-        "num":"0",
+    {
+        "num":20,
         "img":"../assets/Mars.jpg",
         "question":"",
         "answer1":"",
@@ -219,8 +219,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case21":{
-        "num":"0",
+    {
+        "num":21,
         "img":"../assets/neptune.jpg",
         "question":"",
         "answer1":"",
@@ -230,8 +230,8 @@
         "goodAns":"",
         "behavior":0
     },
-    "case22":{
-        "num":"0",
+    {
+        "num":22,
         "img":"../assets/terre.jpg",
         "question":"Bravo tu as rejoint notre bonne vieille terre ",
         "answer1":"",
@@ -241,4 +241,5 @@
         "goodAns":"",
         "behavior":0
     }
-}
+]
+
