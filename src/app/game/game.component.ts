@@ -1,20 +1,26 @@
 import { Component, OnInit } from '@angular/core';
 
+import  poulet from "./game.json"
+
 @Component({
   selector: 'app-game',
   templateUrl: './game.component.html',
   styleUrls: ['./game.component.css'],
 })
 export class GameComponent implements OnInit {
-  constructor() {}
+  constructor() {
+    
+  }
   ngOnInit(): void {
+    console.log(poulet)
     for (let i = 0; i < this.maxSize + 1; i++) {
       this.randomNums.push(i);
     }
   }
   str : string = "test"
   sentence : string = "Vous pouvez lancer les dés"
-  maxSize: number = 20;
+  maxSize: number = 22;
+  
   value: number = 0;
   finalPosition : number = 0
   position: number = 0;
