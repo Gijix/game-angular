@@ -1,0 +1,9 @@
+<div class='quizz'>
+    <h2>Quizz {{position}}</h2>
+    <span>{{question.question}}</span>
+    <br />
+    <input type="button" value={{question.answer1}} (click)="verifyanswer($event)" >
+    <input type="button" value={{question.answer2}} (click)="verifyanswer($event)">
+    <input type="button" value={{question.answer3}} (click)="verifyanswer($event)">
+    <input type="button" value={{question.answer4}} (click)="verifyanswer($event)">
+</div>

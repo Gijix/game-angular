@@ -1,11 +1,22 @@
 <div class="game">
 <div class="tab">
-   <div class="grid" [ngClass]="{'gridActive':position === i}" *ngFor="let rndNum of randomNums;index as i" id="{{i}}">{{rndNum}}</div>
+   <div  class="poulet"  [ngClass]="{'pouletActiv':position === i}"
+   *ngFor="let poule of spaceChicken;index as i" id="{{i}}">
+   <div class="notpoulet" [ngClass]="{'pouletActiv':position === i}">{{i}}</div>
+   </div>
+</div>
+<div class="tab">
+   <div class="grid"
+    *ngFor ="let poule of spaceChicken ; index as i" id={{i}}><img class='grid'[src]= "poule.img"/>
+   </div>
 </div>
 <button  (click)="randomNumber($event)">Lancer le dé</button>
 <button  (click)="reset()">revenir à la position 0</button>
 <div>{{sentence}}</div>
 <p> résultat du dé :{{value}} <br>
 postion acutelle : {{position}}</p>
+<app-quizz [question]="spaceChicken[finalPosition]" [position]="finalPosition"></app-quizz>
+<!-- [verifyanswer]= "verifyanswer" -->
+<!--(change)="verifyanswer" -->
 </div>
 <router-outlet></router-outlet>
